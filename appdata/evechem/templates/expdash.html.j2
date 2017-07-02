@@ -1,0 +1,31 @@
+{% extends "base.html.j2" %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" type="text/css" href="static/css/sidebar.css">
+  
+  <script type="text/javascript" src='static/js/script/tooltip-init.js'></script>
+{% endblock %}
+
+{% block content %}
+  <div id='dashboard' class='container-fluid'>
+
+    <!-- <div class='col-sm-3 col-md-2 bg-inverse sidebar'>
+      <div class='nav nav-sidebar status'>
+        {% if 'character' in session %}
+          <div id='login-info'>
+            <img class='char-portrait' src="https://imageserver.eveonline.com/Character/{{session['character']['CharacterID']}}_512.jpg">
+            <div>
+              <span id='status-name'>{{session['character']['CharacterName'] if 'character' in session else 'Not Logged In'}}</span><a id='status-logout' href="/logout">Log Out</a>
+            </div>
+          </div>
+        {% else %}
+        <a href="/login">
+          <img class='login-eve' src="https://images.contentful.com/idjq7aai9ylm/4fSjj56uD6CYwYyus4KmES/4f6385c91e6de56274d99496e6adebab/EVE_SSO_Login_Buttons_Large_Black.png?w=270&h=45">
+        </a>
+        {%- endif %} 
+      </div>
+    </div> -->
+      
+    <div class='dashboard-content'></div>
+</div>
+{% endblock %}

@@ -1,0 +1,154 @@
+body {
+    background-color: #252830;
+}
+
+
+.dashboard-content {
+    min-height: 100%;
+    height: 2000px;
+    /*background-color: #252830;*/
+   
+}
+
+#dashboard {
+    /*padding-top: 55px;*/
+}
+
+.nav-sidebar {
+    /*margin-right: -21px;*/
+    /*margin-bottom: 20px;*/
+    /*margin-left: -20px;*/
+    border-bottom: 1px solid #40444e;
+}
+
+
+
+.nav {
+    display: block;
+}
+
+.navbar {
+    border-bottom: 1px solid #40444e;
+}
+
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: rgba(255,255,255,.7);
+    letter-spacing: 1px;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+.status {
+    padding: 20px;
+}
+
+.status img.char-portrait {
+    border: 1px solid #40444e;
+    /*min-width: 25%;*/
+    /*max-width: 25%;*/
+    display: block;
+    border-radius: 50%;
+    margin: 15px auto;
+    background-clip: border-box;
+    background-color: #40444e;
+}
+
+.status img.login-eve {
+    /*min-width: 100%;*/
+    max-width: 100%;
+    margin: auto 0;
+}
+
+
+.bg-inverse {
+    background: #30343e!important;
+    color: #fff;
+}
+
+
+.nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #252830;
+}
+
+.nav-sidebar>li>a:hover, .nav-sidebar>li>a:focus{
+    text-decoration: none;
+    color: #fff;
+    background-color: #40444e;
+}
+
+
+#login-info {
+    display: block;
+    font-size: 0px; /*fixes spacing between elements*/
+    /*margin: 10px 0px;*/
+}
+
+#login-info>* {
+    display: inline-block;
+    margin: 0px auto;
+}
+
+#login-info>img {
+    max-width: 20%;
+    width: 45px;
+    /*height: 45px;*/
+    vertical-align: top;
+      
+}
+
+#login-info>div {
+    display: inline-block;
+    text-align: left;
+    padding-left: 15px;
+    width: 80%;
+    font-size: 1rem;
+}
+
+#login-info>div>* {
+    display: block;
+    width: 100%;
+    height: 50%;
+    margin-right: auto;
+    float: left;
+}
+
+#status-logout {
+    color: rgba(255,255,255,.5);
+    /*border: 1px solid #40444e;
+    border-radius: 5px;*/
+}
+
+#status-logout:hover {
+    color: rgba(255,255,255,1);
+}
+
+
+
+
+.sidebar {
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /*box-shadow: 2px 0px 4px -3px black;*/
+    /*border-right: 1px solid #eee;*/
+}
+
+

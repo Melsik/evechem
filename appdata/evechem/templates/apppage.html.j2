@@ -1,0 +1,52 @@
+{% set nav_options = [
+  ('/operations', 'operations', 'Operations', 'fa fa-cogs'),
+  ('/towers', 'towers', 'Towers', 'fa fa-list'),
+  ('/inventory', 'inventory', 'Inventory', 'fa fa-cube'),
+  ('/statistics', 'statistics', 'Statistics', 'fa fa-pie-chart'),
+  ('/market', 'market', 'Market', 'fa fa-line-chart'),
+  ('/fuel-ice', 'fuel-ice', 'Fuel & Ice', 'fa fa-snowflake-o'),
+  ('/user', 'user', 'Log In', 'fa fa-sign-in'),
+  ('/logout', 'logout', 'Log Out', 'fa fa-sign-out')
+] %}
+
+{% set active_page = active_page|default('') %}
+
+{% extends "base.html.j2" %}
+{% block head %}
+  {{ super() }}
+  {# <link rel="stylesheet" type="text/css" href="static/css/main.css"> #}
+  <link rel="stylesheet" type="text/css" href="static/css/sidebar.css">
+  <script type="text/javascript" src='static/js/script/tooltip-init.js'></script> 
+{% endblock %}
+
+{% block content %}
+<div>
+  {% block sidenav %}
+  <nav class='sidebar-nav'>
+    <a class='sidebar-brand' href="/"><i class="fa fa-flask" aria-hidden="true"></i></a>
+    <ul class='sidebar-items'>
+      {% for href, id, text, icon in nav_options %}
+        {% if current_user.is_authenticated and id=='user' %}
+          <li data-toggle="tooltip" data-placement="right" title="Logged in as {{current_user.active_character.name}}">
+            <a class='sidebar-link {{"active" if active_page==id else ""}}' href='{{href}}'>
+              <img class='rounded-circle' src="https://imageserver.eveonline.com/Character/{{current_user.active_character.id}}_256.jpg"><span>{{current_user.active_character.name}}</span>
+            </a>
+          </li>
+        {% elif current_user.is_authenticated and id=='logout' %}
+          <li data-toggle="tooltip" data-placement="right" title="Log Out">
+            <a class='sidebar-link' href='{{href}}'><i class='{{icon}}' aria-hidden="true"></i><span>{{text}}</span></a>
+          </li>
+        {% elif id!='logout' %}
+          <li data-toggle="tooltip" data-placement="right" title='{{text}}'>
+            <a class='sidebar-link {{"active" if active_page==id else ""}}' href='{{href}}'><i class='{{icon}}' aria-hidden="true"></i><span>{{text}}</span></a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endblock %}
+  <div id='dashboard'> 
+    {% block pagecontent %}{% endblock %}
+  </div>
+</div>
+{% endblock %}

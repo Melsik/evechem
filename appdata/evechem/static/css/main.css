@@ -1,0 +1,63 @@
+body {
+    background-color: #252830;
+}
+
+.close {
+    color: white;
+}
+
+.bg-inverse {
+    background: #30343e!important;
+    color: #6f7890;
+}
+
+.btn-primary {
+    background: #1997c6!important;
+    border-color: #1997c6!important;
+}
+
+.btn-outline-primary {
+    border-color: #1997c6!important;
+    color: #1997c6;
+}
+.btn-outline-primary:hover {
+    background-color: #1997c6!important;
+    color: white;
+}
+
+
+.modal-content {
+    background-color: #30343e!important;
+    color: white;
+}
+
+.modal-footer {
+    border-top: 1px solid #434857;
+}
+
+.modal-header {
+    border-bottom: 1px solid #434857;
+}
+
+.table thead th, .table tbody td {
+    border-color: #434857;
+}
+
+/*.modal-backdrop {
+   background-color: #30343e!important;
+   color: white;
+}
+*/
+
+/* fix for chrome bug on font awesome flickering on page load */
+/*body {
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+}*/

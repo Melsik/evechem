@@ -1,0 +1,136 @@
+
+
+
+.sidebar-nav {
+    margin-bottom: 30px;
+    z-index: 10;
+    color: #cfd2da
+}
+
+.sidebar-nav a {
+	color: inherit;	
+}
+
+.sidebar-nav .sidebar-brand {
+	display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    line-height: 1;
+    color: #6f7890;
+    text-align: center;
+    border-bottom: 0;
+    background-color: #0f1013;
+}
+.sidebar-nav .sidebar-items {
+	display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.sidebar-nav .sidebar-link {
+	position: relative;
+	text-align: center;
+	font-size: 18px;
+    padding: 10px 12px;
+    display: inline-block;
+	float: left;
+}
+
+.sidebar-nav .sidebar-link>span {
+	display: block;
+	font-size: 11px;
+}
+
+.sidebar-nav img {
+	border-radius: 50%;
+	width: 26px;
+	display: inline-block;
+
+}
+
+.notifycount {
+	min-width: 16px;
+    height: 16px;
+    padding: 2px;
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    background-color: #d03333;
+    font-size: 11px;
+    border-radius: 35%;
+    text-align: center;
+    /* line-height: 15px; */
+    transform: TRANSLATE(-50%,-50%);
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+@media (min-width: 768px) {
+
+	.sidebar-nav {
+		position: fixed;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    z-index: 10;
+	    width: 70px;
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    overflow-y: auto; /*Change to Auto*/
+	    overflow-x: auto;
+	    color: #cfd2da;
+	    background-color: #30343e;
+	}
+
+	
+
+	.sidebar-nav .sidebar-brand {
+		display: block;
+		font-size: 30px;
+		padding: 20px 0px;
+		text-align: center;
+		height: 70px;
+	    color: #6f7890;
+	    background-color: #0f1013;
+	}
+
+	.sidebar-nav .sidebar-items {
+		padding: 0px;
+		display: block;
+		text-align: center;
+	}
+
+	.sidebar-nav .sidebar-brand:hover {
+		color: #ddd;
+	}
+
+	.sidebar-nav .sidebar-link {
+		display: block;
+		padding: 15px;
+		font-size: 20px;
+		float: none;
+		min-height: 60px;
+	}
+
+	.sidebar-nav .sidebar-link>span {
+		display: none;
+	}
+
+	.sidebar-nav .sidebar-link img {
+		border-radius: 50%;
+		width: 35px;
+	}
+
+	.sidebar-nav li + li {
+		border-top: 1px solid #252830;
+	}
+
+	.sidebar-nav .active {
+		background-color: #252830;
+	}
+
+}

@@ -1,0 +1,52 @@
+#login-as>img, #login-as>h5 {
+	display: inline-block;
+}
+
+.main-portrait {
+		max-height: 4rem;
+		margin-right: .5rem;
+}
+
+
+#addchar-options button {
+	border-bottom: 1px solid #434857;
+	padding: 5px;
+	color: white;
+	font-size: 16px;
+	display: block;
+	width: 100%;
+	background-color: transparent;
+	border-radius: 0px;
+	text-align: left;
+}
+
+#addchar-options a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+
+#addchar-options button:hover {
+	background-color: #30343e;
+	text-decoration: none;
+	color: white;
+}
+
+
+#addchar-options button>img {
+	padding: 5px;
+}
+
+.table-portrait-md {
+	width: 50px;
+}
+
+
+@media (min-width: 768px) {
+	.main-portrait {
+		max-height: 2rem;
+		margin-right: .5rem;
+	}
+
+	
+}

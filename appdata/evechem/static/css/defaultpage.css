@@ -1,0 +1,82 @@
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 300;
+	color: white;
+}
+
+#pagetitle {
+	padding-bottom: 1.5rem;
+}
+
+#sitetag {
+	color: #434857;
+}
+
+hr.seperator {
+	border-top: 1px solid #434857;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	width: 100%;
+}
+
+hr.header {
+	border-top: 1px solid #434857;
+	margin-bottom: 3rem;
+	width: 100%;
+}
+
+.group-section-head {
+	position: relative;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+
+}
+
+.group-section-head:before {
+	position: absolute;
+    top: 50%;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #434857;
+}
+
+.group-section-head>h3 {
+	margin-top: 0;
+    margin-bottom: 0;
+    font-size: 100%;
+    color: inherit;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding-left: 1em;
+    padding-right: 1em;
+    vertical-align: middle;
+    background-color: #252830;
+}
+
+
+#pagecontent {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-weight: 300;
+}
+
+.bg-dark {
+	color: #cfd2da;
+	background: #252830!important;
+}
+
+@media (min-width: 768px) {
+	#pagecontent {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: 85px;
+	}
+	
+}
+

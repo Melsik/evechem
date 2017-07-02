@@ -1,0 +1,20 @@
+{% extends 'apppage.html.j2' %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" type="text/css" href="static/css/landing.css">
+  <script type="text/javascript" src='static/js/script/fadeload.js'></script>
+{% endblock %}
+
+
+{% block pagecontent %}
+  <header id='header'>
+    <img id='header-img' class='fade-on-load' src="static/img/background-min.jpg">
+    <div id='header-content'>
+        <h1 class='display-1'>EVE Chem</h1>
+        <p class='lead'>Starbase management dashboard for Eve Online.</p>
+      <div>
+        <a href='/login'><img src="https://images.contentful.com/idjq7aai9ylm/4fSjj56uD6CYwYyus4KmES/4f6385c91e6de56274d99496e6adebab/EVE_SSO_Login_Buttons_Large_Black.png?w=270&h=45"></a>
+      </div>
+    </div>
+  </header>
+{% endblock %}
